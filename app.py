@@ -29,6 +29,7 @@ def save_order():
         'phone number': phone_number,
     }
 
+
     db.week04homework.insert_one(order)
     return jsonify({'result': 'success', 'msg': '주문 완료! 즐거운 인코그니토 하세요!'})
 
